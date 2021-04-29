@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AnalogSegmentControll" customModule="DZ_11" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoH-c9-b8M" customClass="AnalogSegmentControll" customModule="DZ_11" customModuleProvider="target">
+                    <rect key="frame" x="60" y="80" width="294" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCa-S6-IvB">
+                            <rect key="frame" x="147" y="2" width="0.0" height="46"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1I-xl-5vw">
+                            <rect key="frame" x="147" y="0.0" width="147" height="50"/>
+                            <connections>
+                                <action selector="buttonTwo:" destination="iN0-l3-epB" eventType="touchUpInside" id="H3g-jX-IaJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCB-Z4-ReI">
+                            <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
+                            <connections>
+                                <action selector="buttonOne:" destination="iN0-l3-epB" eventType="touchUpInside" id="ouB-du-z1x"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5f-MF-CH5">
+                            <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-M3-KBc">
+                            <rect key="frame" x="147" y="0.0" width="147" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="FCB-Z4-ReI" secondAttribute="bottom" id="1Fs-8N-GZi"/>
+                        <constraint firstAttribute="bottom" secondItem="eCa-S6-IvB" secondAttribute="bottom" constant="2" id="7fB-wn-UJn"/>
+                        <constraint firstAttribute="centerX" secondItem="eCa-S6-IvB" secondAttribute="trailing" priority="900" id="99h-3H-sGQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Tgy-M3-KBc" secondAttribute="trailing" id="9AE-qK-9hU"/>
+                        <constraint firstItem="j1I-xl-5vw" firstAttribute="top" secondItem="qoH-c9-b8M" secondAttribute="top" id="AOn-4h-ALt"/>
+                        <constraint firstItem="r5f-MF-CH5" firstAttribute="leading" secondItem="qoH-c9-b8M" secondAttribute="leading" id="BdT-NV-dTK"/>
+                        <constraint firstItem="r5f-MF-CH5" firstAttribute="top" secondItem="qoH-c9-b8M" secondAttribute="top" id="F9q-Rl-911"/>
+                        <constraint firstAttribute="bottom" secondItem="j1I-xl-5vw" secondAttribute="bottom" id="Ict-1L-QX8"/>
+                        <constraint firstItem="Tgy-M3-KBc" firstAttribute="leading" secondItem="qoH-c9-b8M" secondAttribute="centerX" id="K7e-Tc-J0c"/>
+                        <constraint firstAttribute="centerX" secondItem="r5f-MF-CH5" secondAttribute="trailing" id="LtE-Ld-eYw"/>
+                        <constraint firstAttribute="centerX" secondItem="FCB-Z4-ReI" secondAttribute="trailing" id="MoL-5K-xvZ"/>
+                        <constraint firstAttribute="bottom" secondItem="Tgy-M3-KBc" secondAttribute="bottom" id="PbX-cm-aOO"/>
+                        <constraint firstItem="FCB-Z4-ReI" firstAttribute="top" secondItem="qoH-c9-b8M" secondAttribute="top" id="W3v-XH-aRB"/>
+                        <constraint firstAttribute="bottom" secondItem="r5f-MF-CH5" secondAttribute="bottom" id="YAP-IR-3zE"/>
+                        <constraint firstItem="j1I-xl-5vw" firstAttribute="leading" secondItem="qoH-c9-b8M" secondAttribute="centerX" id="abW-TU-JO3"/>
+                        <constraint firstAttribute="trailing" secondItem="j1I-xl-5vw" secondAttribute="trailing" id="cxx-Nc-npx"/>
+                        <constraint firstItem="Tgy-M3-KBc" firstAttribute="top" secondItem="qoH-c9-b8M" secondAttribute="top" id="iGl-yO-cpG"/>
+                        <constraint firstItem="eCa-S6-IvB" firstAttribute="leading" secondItem="qoH-c9-b8M" secondAttribute="centerX" priority="900" id="o2q-YL-5le"/>
+                        <constraint firstAttribute="trailing" secondItem="eCa-S6-IvB" secondAttribute="trailing" priority="750" constant="2" id="obf-CS-WXn"/>
+                        <constraint firstItem="FCB-Z4-ReI" firstAttribute="leading" secondItem="qoH-c9-b8M" secondAttribute="leading" id="txl-rV-79z"/>
+                        <constraint firstAttribute="height" constant="50" id="uXN-ly-9K2"/>
+                        <constraint firstItem="eCa-S6-IvB" firstAttribute="top" secondItem="qoH-c9-b8M" secondAttribute="top" constant="2" id="ud1-tX-muY"/>
+                        <constraint firstItem="eCa-S6-IvB" firstAttribute="leading" secondItem="qoH-c9-b8M" secondAttribute="leading" priority="750" constant="2" id="ugY-sb-L9P"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fonViewBorderColor">
+                            <color key="value" red="0.35010425150000002" green="0.3288288144" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="blockViewColor">
+                            <color key="value" red="1" green="0.1685606734" blue="0.13800383929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="textButtonOne" value="1"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="textButtonTwo" value="2"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qoH-c9-b8M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="CYs-Td-0Hm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qoH-c9-b8M" secondAttribute="trailing" constant="60" id="ROS-ta-Qdx"/>
+                <constraint firstItem="qoH-c9-b8M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="guR-GN-PFR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="blockView" destination="eCa-S6-IvB" id="fkD-Uw-5fu"/>
+                <outlet property="checkButtonOne" destination="ugY-sb-L9P" id="9oZ-OK-EIY"/>
+                <outlet property="checkButtonTwo" destination="obf-CS-WXn" id="iNk-Z1-Zcb"/>
+                <outlet property="fonView" destination="qoH-c9-b8M" id="sk5-EF-ead"/>
+                <outlet property="textButtonOneLabel" destination="r5f-MF-CH5" id="r5l-P8-vXP"/>
+                <outlet property="textButtonTwoLabel" destination="Tgy-M3-KBc" id="O6x-Ql-EM6"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-152.00892857142856"/>
+        </view>
+    </objects>
+</document>
