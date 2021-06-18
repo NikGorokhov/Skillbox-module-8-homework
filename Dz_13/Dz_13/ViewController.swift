@@ -18,59 +18,6 @@ class ViewController: UIViewController {
         squareView.alpha = 1
     }
     
-//    1. Изменение цвета фона квадрата на жёлтый
-    @IBAction func backgroundColorButton(_ sender: Any) {
-        backgroundColor()
-    }
-    
-//    2. Перемещение в правый верхний угол экрана
-    @IBAction func movingButton(_ sender: Any) {
-        moving()
-    }
-    
-//    3. Закругление краёв, чтобы квадрат выглядел как круг
-    @IBAction func circleButton(_ sender: Any) {
-        circle()
-    }
-    
-//    4. Поворот на 180 градусов
-    @IBAction func turn180Button(_ sender: Any) {
-        turn180()
-    }
-    
-//    5. «Исчезание»
-    @IBAction func disappearanceButton(_ sender: Any) {
-        disappearance()
-    }
-    
-//    6. Сначала увеличение в два раза, потом анимированное уменьшение обратно
-    @IBAction func increaseButton(_ sender: Any) {
-        increase()
-    }
-    
-//    7. Бесконечную анимацию поворота
-    @IBAction func endlessAnimationButton(_ sender: Any) {
-        endlessAnimation()
-    }
-    
-    @IBAction func previousButton(_ sender: Any) {
-        if item == 1 {
-            item = animateType.count + 1
-        }
-        item -= 1
-        changeAnimateLabel.text = "\(item)"
-        changeAnimationsType()
-    }
-    
-    @IBAction func nextButton(_ sender: Any) {
-        if item == animateType.count {
-            item = 0
-        }
-        item += 1
-        changeAnimateLabel.text = "\(item)"
-        changeAnimationsType()
-    }
-    
     func backgroundColor(){
         item = 1
         self.changeAnimateLabel.text = "\(item)"
@@ -165,6 +112,59 @@ class ViewController: UIViewController {
                 self.squareView.transform = CGAffineTransform.identity
             }, completion: nil)
         }
+    }
+    
+//    1. Изменение цвета фона квадрата на жёлтый
+    @IBAction func backgroundColorButton(_ sender: Any) {
+        backgroundColor()
+    }
+    
+//    2. Перемещение в правый верхний угол экрана
+    @IBAction func movingButton(_ sender: Any) {
+        moving()
+    }
+    
+//    3. Закругление краёв, чтобы квадрат выглядел как круг
+    @IBAction func circleButton(_ sender: Any) {
+        circle()
+    }
+    
+//    4. Поворот на 180 градусов
+    @IBAction func turn180Button(_ sender: Any) {
+        turn180()
+    }
+    
+//    5. «Исчезание»
+    @IBAction func disappearanceButton(_ sender: Any) {
+        disappearance()
+    }
+    
+//    6. Сначала увеличение в два раза, потом анимированное уменьшение обратно
+    @IBAction func increaseButton(_ sender: Any) {
+        increase()
+    }
+    
+//    7. Бесконечную анимацию поворота
+    @IBAction func endlessAnimationButton(_ sender: Any) {
+        endlessAnimation()
+    }
+    
+    @IBAction func previousButton(_ sender: Any) {
+        if item == 1 {
+            item = animateType.count + 1
+        }
+        item -= 1
+        changeAnimateLabel.text = "\(item)"
+        changeAnimationsType()
+    }
+    
+    @IBAction func nextButton(_ sender: Any) {
+        if item == animateType.count {
+            item = 0
+        }
+        item += 1
+        changeAnimateLabel.text = "\(item)"
+        changeAnimationsType()
     }
     
     func changeAnimationsType(){
