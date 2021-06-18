@@ -10,6 +10,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var centerXConstraint: NSLayoutConstraint!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     
+    
     var animateType = ["backgroundColor", "moving", "circle", "turn180", "disappearance", "increase", "endlessAnimation"]
     var item = 0
     
