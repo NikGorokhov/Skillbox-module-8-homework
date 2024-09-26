@@ -43,7 +43,4 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
         cell.percentLabel.text = "\(percent)%  "
         return cell
     }
-    
-    
-    
 }
